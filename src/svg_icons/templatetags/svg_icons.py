@@ -17,6 +17,9 @@ except ImportError:
 register = Library()
 icons = Reader()
 
+default_width = getattr(settings, 'SVG_ICONS_DEFAULT_WIDTH', 22)
+default_height = getattr(settings, 'SVG_ICONS_DEFAULT_HEIGHT', 22)
+
 
 @register.inclusion_tag('svg_icons/icon.html')
 def icon(name, **kwargs):
@@ -24,8 +27,8 @@ def icon(name, **kwargs):
     icon reader in the template.
 
     """
-    width = kwargs.get('width', settings.SVG_ICONS_DEFAULT_WIDTH)
-    height = kwargs.get('height', settings.SVG_ICONS_DEFAULT_HEIGHT)
+    width = kwargs.get('width', default_width)
+    height = kwargs.get('height', default_height)
     return {
         'width': kwargs.get('size', width),
         'height': kwargs.get('size', height),
