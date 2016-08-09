@@ -18,12 +18,14 @@ Installation from pypi via pip
 Configuration
 -------------
 
-In your django project add `svg_icons` to your installed apps
+In your django project add `svg_icons` to your installed apps and set the `SVG_ICONS_SOURCE_FILE` setting to your source file.
 
     INSTALLED_APPS = [
         # ...
         'svg_icons',
     ]
+
+    SVG_ICONS_SOURCE_FILE = '/path/to/source_file.json'
 
 ### Settings
 
@@ -67,5 +69,4 @@ The templatetag accepts some kwargs for icon configuration as well (all are opti
 Todo
 ----
 
- - Add support for other formats
  - Write tests
