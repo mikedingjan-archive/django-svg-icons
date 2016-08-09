@@ -1,0 +1,5 @@
+<svg width="{{ width }}" height="{{ height }}" viewBox="0 0 1024 1024" class="svg{% if className %} {{ className }}{% endif %}">
+    {% for path in paths %}
+    <path d="{{ path }}"></path>
+    {% endfor %}
+</svg>
