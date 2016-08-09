@@ -29,9 +29,9 @@ In your django project add `svg_icons` to your installed apps
 
 Configuration and defaults of the templatetag are defined in django settings.
 
-#### SVG_ICONS_CACHE_KEY_PREFIX
-_default: svg-icons_<br/>
-If enabled the found `SVG` paths can be cached and prefixed with this cache key prefix
+#### SVG_ICONS_READER_CLASS
+_default: `svg_icons.readers.icomoon.IcomoonReader`_<br/>
+Reader class to load the SVG data file and serve the right icon data
 
 #### SVG_ICONS_SOURCE_FILE
 Location of the (icomoon formatted) source file which contains the paths of all `svgs`
