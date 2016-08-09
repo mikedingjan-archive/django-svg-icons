@@ -55,13 +55,14 @@ In your templates you can load the templatetag and start including your icons.
     {% load svg_icons %}
     {% icon 'icon_name' %}
 
-The templatetag accepts some kwargs for icon configuration as well (all are optional).
+The templatetag accepts some kwargs for icon configuration as well.
 
  - **size** for setting both width and height
  - **width** for only setting a specific width
  - **height** for only setting a specific height
  - **className** css classnames applied on the `<svg>` object
 
+All kwargs are optional, when not provided the deaults are used.
 
     {% icon 'icon_name' size=50 className="css classnames" %}
 
