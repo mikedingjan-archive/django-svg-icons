@@ -1,4 +1,4 @@
-.PHONY: clean
+.PHONY: docs
 
 
 default: develop
@@ -12,6 +12,9 @@ develop: clean
 
 lint:
 	flake8 `find src -name '*.py'`
+
+docs:
+	make -C docs html
 
 release: clean
 	pip install twine wheel
