@@ -9,3 +9,7 @@ def get_version():
     elif VERSION[3] != 'final':
         version = '{0} {1}'.format(version, VERSION[3])
     return version
+
+
+def get_short_version():
+    return '{0}.{1}'.format(VERSION[0], VERSION[1])

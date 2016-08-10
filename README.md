@@ -27,25 +27,6 @@ In your django project add `svg_icons` to your installed apps and set the `SVG_I
 
     SVG_ICONS_SOURCE_FILE = '/path/to/source_file.json'
 
-### Settings
-
-Configuration and defaults of the templatetag are defined in django settings.
-
-#### SVG_ICONS_READER_CLASS
-_default: `svg_icons.readers.icomoon.IcomoonReader`_<br/>
-Reader class to load the SVG data file and serve the right icon data
-
-#### SVG_ICONS_SOURCE_FILE
-Location of the (icomoon formatted) source file which contains the paths of all `svgs`
-
-#### SVG_ICONS_DEFAULT_WIDTH
-_default: 22_<br/>
-Default width which gets set when no width or size is provided.
-
-#### SVG_ICONS_DEFAULT_HEIGHT
-_default: 22_<br/>
-Default height which gets set when no height or size is provided.
-
 
 Usage
 -----
