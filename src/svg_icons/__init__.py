@@ -1,5 +1,5 @@
 # Use dev, beta, final to indicate the release type.
-VERSION = (0, 1, 2, 'dev')
+VERSION = (0, 1, 2, 'final')
 
 
 def get_version():
